@@ -37,7 +37,9 @@ When you want to train the model for a specific person, or object or style there
 **Prompt-3**: A photo of sks dog in a car
 
 
+
 ![image](https://github.com/himmetozcan/dreambooth_basics/assets/44242024/83a0780d-3dcd-48a1-8f1e-c641da946904)
+
 
 
 
