@@ -37,6 +37,8 @@ When you want to train the model for a specific person, or object or style there
 **Prompt-3**: A photo of sks dog in a car
 
 
+![image](https://github.com/himmetozcan/dreambooth_basics/assets/44242024/83a0780d-3dcd-48a1-8f1e-c641da946904)
+
 
 
 ### Training Explained
@@ -112,11 +114,11 @@ In Dreambooth, object and style training entails creating a high-quality dataset
 
 #### Comparison with Other Methods
 
-**Lora:** The primary difference is that while Dreambooth updates the entire model, LoRa creates a small external file which must be used alongside an existing checkpoint model. LoRa boasts a quicker training process, lower GPU requirements, and smaller outputs compared to Dreambooth, although both can achieve comparable quality when well-trained.
+**[Lora:](https://github.com/microsoft/LoRA)** The primary difference is that while Dreambooth updates the entire model, LoRa creates a small external file which must be used alongside an existing checkpoint model. LoRa boasts a quicker training process, lower GPU requirements, and smaller outputs compared to Dreambooth, although both can achieve comparable quality when well-trained.
 
-**HyperDreambooth:** It is designed to personalize a text-to-image diffusion model 25 times faster than Dreambooth using a single input image. It employs a HyperNetwork to initially predict a subset of network weights, which are then refined for high fidelity to subject detail. Unlike Dreambooth, HyperDreambooth generates a small set of personalized weights efficiently, achieving personalization in about 20 seconds and yielding a model that's 10,000 times smaller than a typical Dreambooth model, all while maintaining comparable quality and style diversity.
+**[HyperDreambooth:](https://hyperdreambooth.github.io/)** It is designed to personalize a text-to-image diffusion model 25 times faster than Dreambooth using a single input image. It employs a HyperNetwork to initially predict a subset of network weights, which are then refined for high fidelity to subject detail. Unlike Dreambooth, HyperDreambooth generates a small set of personalized weights efficiently, achieving personalization in about 20 seconds and yielding a model that's 10,000 times smaller than a typical Dreambooth model, all while maintaining comparable quality and style diversity.
 
-**Textual Inversion:** Dreambooth and Textual Inversion differ primarily in their fine-tuning processes and model size. Dreambooth's fine-tuning, although relatively quick, results in larger (2-4GB) modified models, offering better accuracy, sharpness, and versatility. On the other hand, Textual Inversion models are lighter but generally lack the accuracy and versatility seen in Dreambooth outputs.
+**[Textual Inversion:](https://textual-inversion.github.io/)** Dreambooth and Textual Inversion differ primarily in their fine-tuning processes and model size. Dreambooth's fine-tuning, although relatively quick, results in larger (2-4GB) modified models, offering better accuracy, sharpness, and versatility. On the other hand, Textual Inversion models are lighter but generally lack the accuracy and versatility seen in Dreambooth outputs.
 
-**Instantbooth:** It operates 100 times faster than Dreambooth while achieving superior resemblance to user input photos. Both methods require a few images of an individual, but InstantBooth avoids extensive fine-tuning of a pre-trained model, a step that Dreambooth necessitates. Instead, it converts visual elements from images into text tokens, modifying the pre-trained model's behavior using specially-created adapter layers. In tests, InstantBooth showed superior results compared to Dreambooth, while also significantly reducing the model size and the time required for personalization.
+**[Instantbooth:](https://jshi31.github.io/InstantBooth/)** It operates 100 times faster than Dreambooth while achieving superior resemblance to user input photos. Both methods require a few images of an individual, but InstantBooth avoids extensive fine-tuning of a pre-trained model, a step that Dreambooth necessitates. Instead, it converts visual elements from images into text tokens, modifying the pre-trained model's behavior using specially-created adapter layers. In tests, InstantBooth showed superior results compared to Dreambooth, while also significantly reducing the model size and the time required for personalization.
 
